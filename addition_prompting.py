@@ -119,7 +119,7 @@ def your_post_processing(output_string):
         res = 0
     return res
 
-model = 'meta-llama/Llama-2-7b-chat-hf'
+model = '"meta-llama/Llama-2-70b-hf'
 print(model)
 seed = 0
 rng = np.random.default_rng(seed)
