@@ -280,7 +280,7 @@ print(res)
 # %%
 sleep(1) # wait a little bit to prevent api call error
 prompt_config['max_tokens'] = 8 
-added_prompt = ('Question: What is 1234567+123457?\nAnswer: 2469134\nQuestion: What is ', '?\nAnswer: ') # Question: What is a+b?\nAnswer:
+added_prompt = ('Question: What is 1234567+1234567?\nAnswer: 2469134\nQuestion: What is ', '?\nAnswer: ') # Question: What is a+b?\nAnswer:
 test_range(added_prompt=added_prompt, prompt_configs=prompt_config, rng=rng, n_sample=10, lower_bound=1000000, upper_bound=9999999, fixed_pairs=None, pre_processing=your_pre_processing, post_processing=your_post_processing, model='meta-llama/Llama-2-7b-chat-hf', debug=False)
 
 # %%
