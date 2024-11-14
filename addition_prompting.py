@@ -18,7 +18,7 @@ def dprint(s, debug):
 YOUR_API_KEY = '35aa8e364eb9f6f2b4c6e9eb61a7f124be16db13e4d5c7335d9cde39620fe0ab'
 together.api_key = YOUR_API_KEY
 
-def call_together_api(prompt, student_configs, post_processing, model='meta-llama/Llama-2-7b-chat-hf', debug=False):
+def call_together_api(prompt, student_configs, post_processing, model='meta-llama/Llama-2-70b-hf', debug=False):
     output = together.Complete.create(
     prompt = prompt,
     model = model, 
@@ -48,7 +48,7 @@ def get_addition_pairs(lower_bound, upper_bound, rng):
 def test_range(added_prompt, prompt_configs, rng, n_sample=30, 
                lower_bound=1, upper_bound=10, fixed_pairs=None, 
                pre_processing=lambda x:x, post_processing=lambda y:y,
-               model='meta-llama/Llama-2-7b-chat-hf', debug=False):
+               model='meta-llama/Llama-2-70b-hf', debug=False):
     int_as = []
     int_bs = []
     answers = []
